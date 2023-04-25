@@ -15,6 +15,10 @@ namespace NTierApp.Logic
         { 
             return productRepository.GetAll();
         }
+        public Product GetProduct(int id) 
+        {
+            return productRepository.Get(id);
+        }
 
     }
 }
