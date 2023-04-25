@@ -16,7 +16,15 @@ namespace NTierApp.DataAccess.EF
             var added = dbContext.Set<T>().Add(entity);            
             dbContext.SaveChanges();
             return added.Entity;
-        }        
+        }
+
+        public T Get(int id)
+        {
+           var item = dbContext.Set<T>()
+                               .First(x => x.Id == id);
+
+            return item;
+        }
 
         public IEnumerable<T> GetAll()
         {
