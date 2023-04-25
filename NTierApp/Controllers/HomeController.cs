@@ -7,7 +7,8 @@ namespace NTierApp.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
+        private int a = 0;
+        private int b = 0;
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -20,13 +21,16 @@ namespace NTierApp.Controllers
 
         public IActionResult Privacy()
         {
+            a = a + 1;
+            b = b + 1;
             return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
-           
+            a = a + 1;
+            b = b + 1;
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
     }
