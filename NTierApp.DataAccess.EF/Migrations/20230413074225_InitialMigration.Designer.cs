@@ -12,8 +12,8 @@ using NTierApp.DataAccess.EF;
 namespace NTierApp.DataAccess.EF.Migrations
 {
     [DbContext(typeof(NTierAppDbContext))]
-    [Migration("20230404100825_CreateDb")]
-    partial class CreateDb
+    [Migration("20230413074225_InitialMigration")]
+    partial class InitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

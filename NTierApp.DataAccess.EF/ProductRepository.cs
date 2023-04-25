@@ -12,6 +12,11 @@ namespace NTierApp.DataAccess.EF
     public class ProductRepository : BaseRepository<Product>, IProductRepository
     {
         public ProductRepository(DbContext dbContext):base(dbContext) { }
-       
+
+        public Product? GetProductByName(string name)
+        {
+            return dbContext.Set<Product>().Where(p => p.Name.Equals(name))
+                                    .FirstOrDefault();
+        }
     }
 }

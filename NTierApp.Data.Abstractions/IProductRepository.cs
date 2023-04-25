@@ -9,5 +9,6 @@ namespace NTierApp.DataAccess.Abstractions
 {
     public interface IProductRepository: IBaseRepository<Product>
     {
+        Product? GetProductByName(string name);
     }
 }
