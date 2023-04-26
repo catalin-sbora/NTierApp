@@ -31,7 +31,7 @@ namespace NTierApp.Controllers
         }
         public async void Test()
         {
-            asdasda;
+           
             return;
         }
     }
