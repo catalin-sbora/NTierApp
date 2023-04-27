@@ -17,7 +17,7 @@ builder.Services.AddScoped<ProductService>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configure the HTTP request pipeline.asdasd
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
