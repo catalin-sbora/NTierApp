@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NTierApp", "NTierApp\NTierApp.csproj", "{0296407A-F8E4-451E-95A8-0D5FCAFD2E13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NTierApp", "NTierApp\NTierApp.csproj", "{0296407A-F8E4-451E-95A8-0D5FCAFD2E13}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{82172751-65CE-4B55-8399-E89B097050AB}"
 EndProject
@@ -11,13 +11,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AppLogic", "AppLogic", "{7D951EAD-49DD-44C7-8FBE-FF8AC34E08F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NTierApp.DataAccess.Model", "NTierApp.DataAccess.Model\NTierApp.DataAccess.Model.csproj", "{CBB09125-55B1-47B2-9D35-3B0AA096BEA6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NTierApp.DataAccess.Model", "NTierApp.DataAccess.Model\NTierApp.DataAccess.Model.csproj", "{CBB09125-55B1-47B2-9D35-3B0AA096BEA6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NTierApp.DataAccess.Abstractions", "NTierApp.Data.Abstractions\NTierApp.DataAccess.Abstractions.csproj", "{C394149A-0D13-4F1C-92B1-3891E727EF93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NTierApp.DataAccess.Abstractions", "NTierApp.Data.Abstractions\NTierApp.DataAccess.Abstractions.csproj", "{C394149A-0D13-4F1C-92B1-3891E727EF93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NTierApp.DataAccess.EF", "NTierApp.DataAccess.EF\NTierApp.DataAccess.EF.csproj", "{74B3BBED-D009-44BA-8DEB-47DA77161C8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NTierApp.DataAccess.EF", "NTierApp.DataAccess.EF\NTierApp.DataAccess.EF.csproj", "{74B3BBED-D009-44BA-8DEB-47DA77161C8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NTierApp.Logic", "NTierApp.Logic\NTierApp.Logic.csproj", "{AD7431EA-25DE-48C3-8CC0-FEF499240F6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NTierApp.Logic", "NTierApp.Logic\NTierApp.Logic.csproj", "{AD7431EA-25DE-48C3-8CC0-FEF499240F6B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E3A43C31-9D8E-40E6-8C0E-8B017FF57AC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NTierApp.UnitTest", "NTierApp.UnitTest\NTierApp.UnitTest.csproj", "{5C116518-A1C9-40E1-AC6E-968B11B91FDA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,10 @@ Global
 		{AD7431EA-25DE-48C3-8CC0-FEF499240F6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD7431EA-25DE-48C3-8CC0-FEF499240F6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD7431EA-25DE-48C3-8CC0-FEF499240F6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C116518-A1C9-40E1-AC6E-968B11B91FDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C116518-A1C9-40E1-AC6E-968B11B91FDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C116518-A1C9-40E1-AC6E-968B11B91FDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C116518-A1C9-40E1-AC6E-968B11B91FDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +63,7 @@ Global
 		{C394149A-0D13-4F1C-92B1-3891E727EF93} = {EC70CAD2-F88B-41DE-8AD3-1C2C5646EAA5}
 		{74B3BBED-D009-44BA-8DEB-47DA77161C8C} = {EC70CAD2-F88B-41DE-8AD3-1C2C5646EAA5}
 		{AD7431EA-25DE-48C3-8CC0-FEF499240F6B} = {7D951EAD-49DD-44C7-8FBE-FF8AC34E08F9}
+		{5C116518-A1C9-40E1-AC6E-968B11B91FDA} = {E3A43C31-9D8E-40E6-8C0E-8B017FF57AC5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {28161C6A-0CA5-4E0A-B63D-51C6EDC50B44}
