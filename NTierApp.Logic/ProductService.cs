@@ -19,6 +19,12 @@ namespace NTierApp.Logic
         {
             return productRepository.Get(id);
         }
+        public decimal CalculateVAT(Product p)
+        {
+
+            return 0.19m * p.Price;
+
+        }
 
     }
 }
