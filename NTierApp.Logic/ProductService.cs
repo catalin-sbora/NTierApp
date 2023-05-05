@@ -21,7 +21,9 @@ namespace NTierApp.Logic
         }
         public decimal CalculateVAT(Product p)
         {
-            return 0.19m * p.Price;
+
+            return 0.119m * p.Price;
+
         }
 
     }
